@@ -1,46 +1,44 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/sun.png" type="image/x-icon">
-    <title>Badal - Weather app</title>
-    
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="card">
-      <div class="search">
-        <input type="text" placeholder="Enter city name" spellcheck="false" />
-        <button><img src="images/search.png" /></button>
-      </div> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badal Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🌤️ Badal Weather</h1>
+      <div class="date-time" id="dateTime"></div>
+    </div>
+
+    <div class="weather-card glass">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for a city...">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
       <div class="error">
         <p>Invalid city name</p>
       </div>
-      <div class="weather">
-        <img src="images/rain.png" class="weather-icon" />
-        <h1 class="temp">22°C</h1>
-        <h2 class="city">New York</h2>
-        <div class="details">
-          <div class="col">
-            <img src="images/humidity.png" />
-            <div>
-              <p class="humidity">50%</p>
-              <p>Humidity</p>
-            </div>
-          </div>
-          <div class="col">
-            <img src="images/wind.png" />
-            <div>
-              <p class="wind">15km/h</p>
-              <p>Wind</p>
-            </div>
-          </div>
+
+      <div class="info">
+        <div class="weather-icon">
+          <img src="images/clouds.png" class="weather-icon-img" />
+        </div>
+        <div class="city-temp">
+          <h2 class="city">Delhi</h2>
+          <h1 class="temp">26°C</h1>
+        </div>
+        <div class="extras">
+          <div><i class="fas fa-tint"></i> <span class="humidity">65%</span> Humidity</div>
+          <div><i class="fas fa-wind"></i> <span class="wind">12 km/h</span> Wind</div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+  </div>
 
-  
+  <script src="script.js"></script>
+</body>
+</html>
